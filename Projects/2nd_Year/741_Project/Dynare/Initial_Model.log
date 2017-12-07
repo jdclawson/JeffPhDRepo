@@ -1,0 +1,85 @@
+Starting Dynare (version 4.5.1).
+Starting preprocessing of the model file ...
+Found 8 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+y  		 0.900808
+cy 		 0.302666
+co 		 0.315283
+k  		 0.741956
+x  		 -0.459096
+r  		 0.412935
+w  		 0.585525
+z  		 0.4
+{Error using print_info (line 45)
+Blanchard Kahn conditions are not satisfied: indeterminacy
+
+Error in stoch_simul (line 95)
+    print_info(info, options_.noprint, options_);
+
+Error in Initial_Model (line 165)
+info = stoch_simul(var_list_);
+
+Error in dynare (line 223)
+evalin('base',fname) ;
+} 
+dynare Initial_Model.mod
+
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Local state space iteration (second order).
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+[mex] Quasi Monte-Carlo sequence (Sobol).
+[mex] Markov Switching SBVAR.
+
+Using 64-bit preprocessor
+Starting Dynare (version 4.5.1).
+Starting preprocessing of the model file ...
+Found 8 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+STEADY-STATE RESULTS:
+
+y  		 0.900808
+cy 		 0.302666
+co 		 0.315283
+k  		 0.741956
+x  		 -0.459096
+r  		 0.412935
+w  		 0.585525
+z  		 0.4
+{Error using print_info (line 45)
+Blanchard Kahn conditions are not satisfied: indeterminacy
+
+Error in stoch_simul (line 95)
+    print_info(info, options_.noprint, options_);
+
+Error in Initial_Model (line 165)
+info = stoch_simul(var_list_);
+
+Error in dynare (line 223)
+evalin('base',fname) ;
+} 
+exit

@@ -41,6 +41,11 @@ class Project_Model(object):
             print "Punishing fsolve for negative consumption"
             resid[0]=1e10
             resid[1]=1e10
+
+        elif x_in<0:
+            print "Punishing fsolve for negative transfer"
+            resid[0]=1e10
+            resid[1]=1e10
         else:
             resid[0] = self.marg_util(cy)-self.beta*(1+r)*self.marg_util(co)
             resid[1] = k_in**self.alpha-co-cy-k_in-x_in
@@ -95,6 +100,8 @@ class Project_Model(object):
 
         sol = opt.root(self.steadystate,initss,method='lm')
 
+        print sol
+
         (self.k_ss,self.x_ss)=sol.x
 
         self.r_ss,self.w_ss,self.cy_ss,self.co_ss=self.get_ssvalues()
@@ -108,7 +115,7 @@ class Project_Model(object):
             print "Steady State cy: ",self.cy_ss
             print "Steady State co: ",self.co_ss
 
-        opt_val = self.VFI(initvfi,showprogress)
+        #opt_val = self.VFI(initvfi,showprogress)
 
 
 

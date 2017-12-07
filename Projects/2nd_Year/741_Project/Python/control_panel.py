@@ -16,7 +16,7 @@ tol = 1e-8
 
 #Intial Guesses
 k_init = .5 #Initial guess for steady state capital ratio
-x_init =.001
+x_init = .0001
 p_gridpts = 20
 s_gridpts = 100
 
@@ -28,11 +28,9 @@ ShowProgress=True
 
 params = (g,rho,beta,alpha,gamma,delta,sig_e,p_gridpts,disp,tol,s_gridpts)
 
-params2 = np.array(params)
-paramsdf = pd.DataFrame(params2)
-
-print paramsdf.to_latex()
-
 Basic = AUX.Project_Model(params)
 
 Basic.modelsolve(arg_in,vfi_in,ShowProgress)
+
+verify=np.array([Basic.k_ss,Basic.x_ss])
+

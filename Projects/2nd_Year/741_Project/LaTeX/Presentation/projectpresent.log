@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  6 DEC 2017 21:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  7 DEC 2017 01:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -911,7 +911,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks51
 \@floatcapt=\box59
 )
-No file projectpresent.aux.
+(./projectpresent.aux)
 \openout1 = `projectpresent.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
@@ -929,6 +929,7 @@ LaTeX Font Info:    ... okay on input line 49.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
 LaTeX Font Info:    ... okay on input line 49.
 LaTeX Font Info:    Try loading font information for OT1+phv on input line 49.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
@@ -1009,6 +1010,8 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 49.
 LaTeX Info: Redefining \pageref on input line 49.
 LaTeX Info: Redefining \nameref on input line 49.
+
+(./projectpresent.out) (./projectpresent.out)
 \@outlinefile=\write5
 \openout5 = `projectpresent.out'.
 
@@ -1096,58 +1099,58 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <6> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 49.
 \c@lstlisting=\count177
 
-No file projectpresent.nav.
+(./projectpresent.nav)
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 53.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 53.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <4> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 53.
-[1
+ [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2
+] [2
 
-] <chart.png, id=83, 730.73pt x 250.9375pt>
+] <chart.png, id=131, 730.73pt x 250.9375pt>
 File: chart.png Graphic file (type png)
- <use chart.png>
-Package pdftex.def Info: chart.png used on input line 88.
+
+<use chart.png>
+Package pdftex.def Info: chart.png used on input line 90.
 (pdftex.def)             Requested size: 365.3641pt x 125.46843pt.
 
-Overfull \hbox (58.07423pt too wide) in paragraph at lines 88--88
+Overfull \hbox (58.07423pt too wide) in paragraph at lines 90--90
  [][][][] 
  []
 
 [3
 
- <./chart.png>] <japan_budget.jpg, id=112, 265.4718pt x 318.4698pt>
+ <./chart.png>] <japan_budget.jpg, id=167, 265.4718pt x 318.4698pt>
 File: japan_budget.jpg Graphic file (type jpg)
 
 <use japan_budget.jpg>
-Package pdftex.def Info: japan_budget.jpg used on input line 101.
+Package pdftex.def Info: japan_budget.jpg used on input line 103.
 (pdftex.def)             Requested size: 132.73557pt x 159.2345pt.
  [4
 
  <./japan_budget.jpg>]
-<Debt_Fert.png, id=141, 578.16pt x 433.62pt>
+<Debt_Fert.png, id=201, 578.16pt x 433.62pt>
 File: Debt_Fert.png Graphic file (type png)
  <use Debt_Fert.png>
-Package pdftex.def Info: Debt_Fert.png used on input line 112.
+Package pdftex.def Info: Debt_Fert.png used on input line 114.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 
-Overfull \vbox (23.30478pt too high) detected at line 112
+Overfull \vbox (23.30478pt too high) detected at line 114
  []
 
 [5
 
- <./Debt_Fert.png>] <CA_Fert.png, id=171, 578.16pt x 433.62pt>
+ <./Debt_Fert.png>] <CA_Fert.png, id=237, 578.16pt x 433.62pt>
 File: CA_Fert.png Graphic file (type png)
 
 <use CA_Fert.png>
-Package pdftex.def Info: CA_Fert.png used on input line 124.
+Package pdftex.def Info: CA_Fert.png used on input line 126.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 
-Overfull \vbox (23.30478pt too high) detected at line 124
+Overfull \vbox (23.30478pt too high) detected at line 126
  []
 
 [6
@@ -1162,47 +1165,47 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
 ] [9
 
 ]
-<Full_Model.png, id=284, 606.265pt x 487.8225pt>
+<Full_Model.png, id=370, 606.265pt x 487.8225pt>
 File: Full_Model.png Graphic file (type png)
  <use Full_Model.png>
-Package pdftex.def Info: Full_Model.png used on input line 192.
+Package pdftex.def Info: Full_Model.png used on input line 193.
 (pdftex.def)             Requested size: 212.19592pt x 170.74043pt.
  [10
 
  <./Full_Model.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 208.
+LaTeX Font Info:    Try loading font information for U+msa on input line 209.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 208.
+LaTeX Font Info:    Try loading font information for U+msb on input line 209.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 208.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 209.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 208.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 209.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <6> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 208.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 209.
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 208.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 209.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 208.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 209.
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <8> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 208.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 209.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <8> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 208.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 209.
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <6> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 208.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 209.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <6> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 208.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 208.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 209.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 209.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 208.
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 209.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/doublestroke/Udsrom.fd
@@ -1221,6 +1224,14 @@ File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 ] [16
 
 ]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 307.
+
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [17
+
+]
 \tf@nav=\write6
 \openout6 = `projectpresent.nav'.
 
@@ -1230,33 +1241,24 @@ File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 \tf@snm=\write8
 \openout8 = `projectpresent.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 292.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 292.
- (./projectpresent.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 292.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 292.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 321.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 321.
 
-
-Package rerunfilecheck Warning: File `projectpresent.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `projectpresent.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  16BEA4520D8E8FBB940D53D48AB1D367;280.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 292.
+(./projectpresent.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 321.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 321.
+Package rerunfilecheck Info: File `projectpresent.out' has not changed.
+(rerunfilecheck)             Checksum: 16BEA4520D8E8FBB940D53D48AB1D367;280.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 321.
  ) 
 Here is how much of TeX's memory you used:
- 19780 strings out of 493089
- 370260 string characters out of 6134842
- 463790 words of memory out of 5000000
- 22682 multiletter control sequences out of 15000+600000
- 33217 words of font info for 74 fonts, out of 8000000 for 9000
+ 19891 strings out of 493089
+ 371490 string characters out of 6134842
+ 463789 words of memory out of 5000000
+ 22777 multiletter control sequences out of 15000+600000
+ 33732 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,16n,72p,414b,581s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,72p,414b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texl
@@ -1265,13 +1267,14 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/20
 15/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on projectpresent.pdf (16 pages, 886463 bytes).
+015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
+ype1/urw/helvetic/uhvro8a.pfb>
+Output written on projectpresent.pdf (17 pages, 904962 bytes).
 PDF statistics:
- 529 PDF objects out of 1000 (max. 8388607)
- 473 compressed objects within 5 object streams
- 44 named destinations out of 1000 (max. 500000)
- 116 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 690 PDF objects out of 1000 (max. 8388607)
+ 624 compressed objects within 7 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 164 words of extra memory for PDF output out of 10000 (max. 10000000)
 
