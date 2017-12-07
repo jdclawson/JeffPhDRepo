@@ -1,0 +1,159 @@
+\documentclass[dvips,12pt]{article}
+
+% Any percent sign marks a comment to the end of the line
+
+% Every latex document starts with a documentclass declaration like this
+% The option dvips allows for graphics, 12pt is the font size, and article
+%   is the style
+
+\usepackage[pdftex]{graphicx}
+\usepackage{url}
+\usepackage{dsfont}
+\usepackage{amsmath}
+
+% These are additional packages for "pdflatex", graphics, and to include
+% hyperlinks inside a document.
+
+\setlength{\oddsidemargin}{0.25in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{8.5in}
+
+% These force using more of the margins that is the default style
+
+\begin{document}
+
+% Everything after this becomes content
+% Replace the text between curly brackets with your own
+
+\title{Demographics, Welfare and Global Imbalances}
+\author{Jeff Clawson}
+\date{\today}
+
+% You can leave out "date" and it will be added automatically for today
+% You can change the "\today" date to any text you like
+
+
+\maketitle
+
+% This command causes the title to be created in the document
+
+\section{Introduction and Question}
+
+% An article style is separated into sections and subsections with 
+%   markup such as this.  Use \section*{Principles} for unnumbered sections.
+The welfare states of the developed world have been created with the best of intentions, such as the Social Security system in the United States caring for the elderly during the depths of the Great Depression.
+There are many aspects to examine when it comes to a welfare state, but the questions that I 
+am most interested in is this: What is the impact of demographic changes (for example a 
+negative unexpected popluation shock) on the current account of a country? How do the smaller group of young people take into account that they may be given a smaller pension? As long as the population 
+is growing and there are plenty of young people to finance the old, the typical 
+Pay-As-You-Go (or PAYG for short) system 
+is sustainable. However, when there begins to be a contraction in the number of young people, 
+the government has liabilities to pay and a smaller tax base to work with. I hypothesize that this contribute to a current account surplus in most cases, as a weakened welfare state would push people to save more. \\
+
+
+\section{Literature Review}
+The focus on a PAYG system stems from it being one of the most common systems used in the developed world. Comparison to another system could be done, however, the real-world transition from PAYG to another system would be politically difficult, as Conesa and Krueger (1999) show. Therefore, my focus will be strictly on PAYG systems and looking at the impact on global imbalances on one of the weaknesses of the system: an ageing population.
+
+A common hypothesis for global imbalances is the "global savings glut": where East Asian countries have large savings rates compared to the US, and has therefore made credit more easily accessible and contributed to the large current account devicits for the US. Bernanke(2005) pushed this idea. With my main focus being on a pension system, Samwick(2000) provides and empirical example showing the impact of pension systems on the savings decisions on agents, which in turn would have an impact on current accounts. Eugeni(2015) found that emerging countries can only run a trade surplus when the long run growth rate is higher than the interest rates. Most of this came down to differences in execution between countries in their PAYG systems. While this may work for the developing world, it doesn't explain Japan: a country with an ageging population, high current account surplus and balloning government debt.\\  
+
+This idea of applying different population growth rates to an overlapping generations model to two different countries can be traced to Sayan(2005). Sayan was more concerned with comparing autarky and trade rather than financial markets. The slower growing population becomes relatively more capital abundant and has a comparative advantage in capital. Unlike his paper, my idea contributes the idea of applying stochastic shocks to population growth as opposed to them being always known.\\
+
+While Sayan(2005) was concerned with trade, Stavely-O'Carroll(2017) applied OLG to financial markets and introduced risky assets. With the risky assets, they were able to determine that a PAYG system versus no pension system at all leads agents with the PAYG safety net to invest in more risky assets. While I won't have risky assets in my model, there will be risk in the form negative population shocks affecting the tax base and in turn affecting the level of benefits. Agents will need to take into account that their benefits may be cut in response to a shrinking tax base.\\
+
+
+
+\section{Model}
+
+The model is very preliminary at this point and subject to changes. This basic construction will be worked on and revised before the final presentation. Over the course of the next month, I will be tweaking some features and solving out the model and then doing a basic approximation in dynare. There are a lot of moving pieces, so I haven't been able to complete them all as of yet. \\
+
+Unlike Staveley-OCarroll, I abstract from uncertainty
+in asset holdings and instead look at uncertainty in population growth rates. I compare two
+countries: one where the domestic country is subject to a stochastic population growth rate (and has a PAYG system)
+and the foreign country has a constant population growth rate (and lacks a PAYG system). My initial idea is to approach it like a stochastic productivity shock that we did in class. I've been having trouble with the bond clearing conditions and government budget constraints, but I will show what I have.\\
+
+Since the model is heavy in 
+notation, note that the subscripts are: \{time period, country, young or old\}.
+Since there is uncertainty (albiet in a different form), I will follow Staveley-OCarroll's
+use of the Epstein-Zin utility function. While there aren't risky assets in my model,
+it'll still be useful to have an underlying behavior that can match consumers responses 
+to uncertainty in terms of their pensions and how they'll choose to invest in 
+riskless assets and capital as opposed to more consumption in their youth.
+
+\\The household's problem in the domestic country is the following (the foreign problem is pretty close to the same with a few differences that I will note):
+
+
+\[u(c_{t,d,y},c_{t+1,d,o})= \big\{ c_{t,d,y}^{1-\gamma}+\beta \mathds{E} [ c_{t+1,d,o}^{1-\alpha} ]^{\frac{1-\gamma}{1-\alpha}} \big\}^{\frac{1}{1-\gamma}} \]
+\[\text{subject to: } w_t = k_t + c_{t,d,y} + b^d_{t,h} + q_t b^d_{t,f} + x_t \]
+\[x_{t+1} + r_{t+1}k + (1+r^h_{t+1}) b^d_{t,h} + (1+r^f_{t+1})b^d_{t,f} = c_{t+1,d,o}\]
+
+where $w_t$ is wage, $k_t$ is capital (per capita), $x_t$ is the pension payout and recieved benefit for the young and old, respectively (per capita as well), in time t. As a simplification, it's a lumpsum transfer. $b$ is a government isssued bond from the country listed in the subscript in time t. $q_t$ is the exchange rate. (Money will play a role, but I haven't fully determined it yet). The foreign household problem will lack an $x_t$ term.
+Since agents can purchase good from the other country, consumption uses a CES aggregator in the form:
+
+\[c_{t,d,y}=[\phi_{h,t}^{1-\sigma}(c_{d,t,y}^{d})^\sigma+(1-\phi_{h,t})^{1-\sigma}(c_{d,t,y}^f)^\sigma]^\frac{1}{\sigma}\]
+With similar terms for the old and foreign consumer.
+
+$\beta$ is the usual discount factor, $\alpha$ controls relative risk aversion and $\gamma$ is the inverse of the elasticity of intertemporal substitution. There are no bequests in this model, so the agent simply eats their capital at the end of the period.
+Population in the two countries grow at the respective rates:
+\[L^f_{t+1}=(1+g_f)L^f_t\]
+\[L^d_{t+1}=(1+g_d e^{z_t})L^d_t \text{ where } z_t=\rho z_{t-1} + \epsilon_t \text{, where } \epsilon_t \sim N(0,\sigma)\]
+
+And each government's budget constraint satsifies the following (to be worked out):
+\[L_t x_t + B_{t,h} = L_{t-1} x_{t} + (1+r_{h,t}) B_{t-1,h}\]
+
+Both countries can purchase goods from each other and both countries can purchase bonds from each other. But in order to keep the capital market simple, each agent is only permitted to invest in capital in their own country. I am more interested in debt flows and trade flows between countries at the moment.\\
+The Market Clearing Conditions are as follows:
+\[c_{t,d,y}^d+c_{t,d,o}^d+c_{t,f,y}^d+c_{t,f,o}^d=y^d_t\]
+\[c_{t,d,y}^f+c_{t,d,o}^f+c_{t,f,y}^f+c_{t,f,o}^f=y^f_t\]
+\[L^f_t b^d_t + L^d_t b^f_t = B_{t,d}\] 
+The last condition has a similar form for foreign denominated bonds. Basically, the demand for bonds from both countries must be equal to the supply. Capital and labor market clearing are standard, as those markets aren't integrated.
+Again, this model is in the very early stages, but I believe has the potential to lead to some interesting conclusions and can help with data.
+
+%\biblography{bibl1}
+
+\begin{thebibliography}{99}
+
+\bibitem{cank99}
+  Juan C. Conesa, Rik Kreuger
+  \textit{Social Security Reform With Heterogeneous Agents},
+  Review of Economic Dynamics,
+  pages 757-795,
+  1994.
+
+\bibitem{bernanke05}
+  Ben Bernanke,
+  \textit{The Sandridge Lecture, Virginia Associatino of Economists},
+  Richmond, Virginia,
+  March 10, 2005.
+
+\bibitem{samwick00}
+  Andrew A. Samwick,
+  \textit{Is Pension Reform Conducive to Higher Saving?},
+  The Review of Economics and Statistics
+  pages 264-272,
+  2000.
+
+\bibitem{Eugeni15}
+  Sara Eugeni,
+  \textit{An OLG model of Global Imbalances},
+  Journal of International Economics,
+  pages 83-97,
+  2015.
+\bibitem{Sayan05}
+  Serdar Sayan,
+  \textit{Heckscher-Ohlin Revisited: implications of differential populations dynamic for trade within an overlapping generations framework},
+  Journal of Economic Dynamics and Control,
+  pages 1471-1493,
+  2005.
+\bibitem{Stavely-O'Carroll17}
+  James and Olena Stavely-O'Carroll,
+  \textit{Impact of pension system structure on international financial capital allocation},
+  European Economic Review,
+  pages 1-22,
+  2017.
+
+\end{thebibliography}
+
+
+
+\end{document}

@@ -1,0 +1,115 @@
+\documentclass[dvips,12pt]{article}
+
+% Any percent sign marks a comment to the end of the line
+
+% Every latex document starts with a documentclass declaration like this
+% The option dvips allows for graphics, 12pt is the font size, and article
+%   is the style
+
+\usepackage[pdftex]{graphicx}
+\usepackage{url}
+\usepackage{dsfont}
+\usepackage{amsmath}
+\usepackage{tikz}
+
+\usepackage{amssymb}% http://ctan.org/pkg/amssymb
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
+
+\usepackage{array}
+\usepackage{booktabs}
+% These are additional packages for "pdflatex", graphics, and to include
+% hyperlinks inside a document.
+
+\setlength{\oddsidemargin}{0.25in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{8.5in}
+
+% These force using more of the margins that is the default style
+
+\begin{document}
+
+% Everything after this becomes content
+% Replace the text between curly brackets with your own
+
+\title{Demographics, Welfare and Global Imbalances: My Responses}
+\author{Jeff Clawson}
+\date{\today}
+
+% You can leave out "date" and it will be added automatically for today
+% You can change the "\today" date to any text you like
+
+
+\maketitle
+
+% This command causes the title to be created in the document
+
+\section{My Comment Responses}
+
+\subsection{Negative Population Shock Example}
+
+When I say "negative population shock", my initial idea was due to a cultural change where less children is preferred to more. Think of Japan here. While I realize the way I've modeled it makes it seem instantanous rather than gradually changing over time, I made this choice for tractibility reasons. I suppose that this could also apply to war, natural disasters, but an cultural shift was my original idea. This because I believe that with a cultural shift, it'll be more difficult for a government to change their pension system (as I had mentioned in my literature review) as opposed to a sudden shift where a government may be given significantly more political capital to make sudden changes in their spending.
+
+\subsection{Quick Data Examination}
+To address this concern, I took data from the World Bank (I used 2011 data, as it was the most complete) and wrote a python script that isolated the countries that have a positive current account balance (positive \% of GDP) and a below replacement fertility rate (officially defined as 2.1 children per woman). Python produced the following list of countries that satisfy those criteria and I've indicated with a \checkmark which ones have a Pay-As-You-Go component to their pension system (determined by some searching in Google. Obviously, for the paper, I'll be more precise):
+
+\begin{table}[h!]
+    \centering
+\begin{tabular}{ll}
+\toprule
+{Has PAYG} &    Country \\
+\midrule
+\checkmark  &              Austria \\
+  &           Azerbaijan \\
+\checkmark  &             Bulgaria \\
+\checkmark&              Bermuda \\
+\checkmark  &    Brunei Darussalam \\
+\checkmark  &          Switzerland \\
+\checkmark  &                China \\
+\checkmark  &              Germany \\
+\checkmark  &              Denmark \\
+  &              Estonia \\
+ &            Hong Kong \\
+\checkmark &              Hungary \\
+\checkmark &              Ireland \\
+\checkmark &        Japan \\
+\checkmark &          South Korea \\
+\checkmark &           Luxembourg \\
+\checkmark &            Macao SAR \\
+\checkmark &          Netherlands \\
+\checkmark &               Norway \\
+NONE &                Qatar \\
+\checkmark &   Russian Federation \\
+\checkmark &            Singapore \\
+\checkmark &             Slovenia \\
+\checkmark &               Sweden \\
+\checkmark &             Thailand \\
+\checkmark &  Trinidad and Tobago \\
+\checkmark &              Vietnam \\
+\bottomrule
+\end{tabular}
+\caption{Pension Systems with Shrinking countries and positive current accounts}
+\end{table}
+
+Obviously, this is a generalization, because many of the European Countries also have a fully funded component associated with it, but my point is that this could be motivating evidence to examine if pay-as-you-go system plus a shrinking population results in a current account surplus.
+
+\newpage
+
+\subsection{Uncertainty Response}
+
+When I refer to uncertainty, I mean uncertainty in the population level of tomorrow. The payout of the pay as you go system is dependent on how many young people there are. If the population is continuing to grow, then the young person doesn't have to worry about where their pension is going to come from when they are old. If there's going to be contraction in the population, that's going to affect what the payout is going to be for the young person in time t and therefore is going to affect the consumption/savings decision for the young as they plan for the future.
+
+
+\subsection{Simpler Model}
+For time reasons, I'll simply describe changes that I'll make to the model: I initially wanted to follow Stavley-O'Carroll as closely as possible, but on further reflection, I can strip the model down further to get something more tractable. I'll add a couple more features before the deadline in January to try and make the model more convincing. First, I'll change the preferences to GHH, just so we'll get the proper signs for the trade balance and current account. I'll also drop capital from the model and have the agents save through bonds. I'll leave everything else in place, unless there are other features you think would be a good idea to drop.
+
+
+
+
+
+
+\end{document}

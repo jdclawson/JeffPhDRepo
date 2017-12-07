@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Motivation}{3}{0}{1}
+\beamer@sectionintoc {2}{Lit Review}{8}{0}{2}
+\beamer@sectionintoc {3}{Ideal Model}{9}{0}{3}
+\beamer@sectionintoc {4}{Current Model}{11}{0}{4}
+\beamer@sectionintoc {5}{Steady State}{14}{0}{5}
+\beamer@sectionintoc {6}{Next Steps\dots }{16}{0}{6}
